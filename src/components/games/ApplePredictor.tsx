@@ -281,7 +281,7 @@ export const ApplePredictor: React.FC<ApplePredictorProps> = ({
                               ? 'border-2 border-amber-400 bg-gradient-to-b from-emerald-950/90 via-black to-zinc-950 shadow-[0_0_22px_rgba(245,158,11,0.6)] scale-105 z-10'
                               : 'border-2 border-emerald-400 bg-gradient-to-b from-emerald-950/90 via-black to-zinc-950 shadow-[0_0_18px_rgba(52,211,153,0.7)] scale-105 z-10'
                             : hasRevealed && !isSafe
-                            ? 'border border-red-900/30 bg-zinc-950/60 opacity-30'
+                            ? 'border-2 border-red-700/80 bg-gradient-to-b from-red-950/90 via-black to-zinc-950 shadow-[0_0_14px_rgba(185,28,28,0.45)]'
                             : isScanningThisRow
                             ? 'border-red-700/70 bg-red-950/40'
                             : 'border-white/10 bg-zinc-900/70 hover:border-red-900/40'
@@ -298,15 +298,15 @@ export const ApplePredictor: React.FC<ApplePredictorProps> = ({
                               <img
                                 src="/apple-official.png"
                                 alt="Safe Apple"
-                                className="w-[88%] h-[88%] object-contain rounded-lg drop-shadow-[0_0_10px_rgba(52,211,153,0.9)]"
+                                className="w-[88%] h-[88%] object-contain rounded-full drop-shadow-[0_0_10px_rgba(52,211,153,0.9)]"
                               />
                             </div>
                           ) : (
-                            <div className="w-full h-full p-1 flex items-center justify-center opacity-30">
+                            <div className="w-full h-full p-1 flex items-center justify-center animate-in zoom-in-75 duration-300">
                               <img
-                                src="/apple-bad.jpg"
-                                alt="Bad Apple"
-                                className="w-[80%] h-[80%] object-contain rounded-lg grayscale contrast-125"
+                                src="/apple-bad-official.jpg"
+                                alt="Bitten Apple"
+                                className="w-[88%] h-[88%] object-cover rounded-full drop-shadow-[0_0_8px_rgba(185,28,28,0.75)]"
                               />
                             </div>
                           )
